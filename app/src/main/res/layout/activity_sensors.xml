@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nandan.a173050047_recorddata.Sensors">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:src="@mipmap/ic_launcherweb"
+            />
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/switchState"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="14dp" />
+        <Button
+            android:id="@+id/recordbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Record"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <CheckBox
+        android:id="@+id/accMeter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="10sp"
+        android:padding="15dp"
+        android:paddingBottom="15dp"
+        android:text="Accelerometer"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible" />
+
+
+    <CheckBox
+        android:id="@+id/gps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accMeter"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="10sp"
+        android:padding="15dp"
+        android:paddingBottom="15dp"
+        android:text="GPS"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

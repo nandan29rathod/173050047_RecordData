@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">173050047_RecordData</string>
+    <string-array name="names">
+        <item>"Login"</item>
+        <item>"Sensors"</item>
+        <item>"Record"</item>
+    </string-array>
+</resources>
